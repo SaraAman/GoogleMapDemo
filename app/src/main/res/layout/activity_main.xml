@@ -8,12 +8,24 @@
     tools:context=".MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-   <SearchView
-       android:background="@color/green"
-       android:id="@+id/search_bar"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <fragment
+       android:id="@+id/autocomplete_fragment"
+
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"/>
+       android:layout_height="wrap_content"
+       android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+       />
+
+<!--   <SearchView-->
+
+<!--       android:background="@color/green"-->
+<!--       android:id="@+id/search_view"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"/>-->
+
 </LinearLayout>
    <fragment
        android:layout_width="match_parent"
